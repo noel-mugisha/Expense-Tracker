@@ -1,0 +1,10 @@
+=== MONTHLY TOTALS ===
+MARCH --> 46000.00 RWF
+
+=== CATEGORY TOTALS ===
+Clothes --> 23000.00 RWF
+Food --> 23000.00 RWF
+
+=== ALL EXPENSES ===
+Expense{id=1, category='Food', amount=23000.0, date=2025-03-23}
+Expense{id=2, category='Clothes', amount=23000.0, date=2025-03-12}

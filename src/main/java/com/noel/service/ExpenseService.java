@@ -15,12 +15,9 @@ public class ExpenseService {
 
     // method of adding an expense
     public void addExpense(Expense expense) throws IllegalArgumentException{
-        try {
-            expenseRepository.saveExpense(expense);
-            System.out.println("Successfully added expense: " + expense);
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
-        }
+        expenseRepository.saveExpense(expense);
+        System.out.println("Successfully added expense: " + expense);
+
     }
 
     public void getAllExpenses() {
@@ -64,7 +61,7 @@ public class ExpenseService {
 
             // write all expenses report
             writer.println("\n=== ALL EXPENSES ===");
-            expenses.forEach(System.out::println);
+            expenses.forEach(writer::println);
 
         } catch (IOException e) {
             e.printStackTrace();
