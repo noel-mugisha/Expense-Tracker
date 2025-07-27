@@ -12,7 +12,7 @@ public class ExpenseRepository {
         expenses.add(expense);
     }
 
-    public List<Expense> getAllExpenses() {
+    public List<Expense> getExpenses() {
         return expenses;
     }
 }
